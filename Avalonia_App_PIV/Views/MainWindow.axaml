@@ -21,8 +21,8 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     <StackPanel>
-        <Button Width="160" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew">Show list</Button>
-        <Button Width="160" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew" >Add borrower</Button>
+        <Button Width="160" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew" Click="ShowListButton">Show list</Button>
+        <Button Width="160" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew" Click="BorrowerButton">Add borrower</Button>
         <Button Width="160" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew">Delete borrow</Button>
     </StackPanel>
 </Window>

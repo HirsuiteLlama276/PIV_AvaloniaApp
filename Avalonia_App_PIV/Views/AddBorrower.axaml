@@ -4,6 +4,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Avalonia_App_PIV.Views.AddBorrowerWindow"
-        Title="AddBorrower">
-    Welcome to Avalonia!
+        Title="AddBorrower"
+        Width="300"
+        Height="200"
+        MaxHeight="330"
+        MaxWidth="220"
+        MinWidth="160"
+        MinHeight="200"
+        Background="Teal">
+    <Grid>
+        <StackPanel>
+            <TextPresenter Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew" Margin="5">Enter name of the borrower</TextPresenter>
+            <TextBox Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Honeydew" Margin="5"></TextBox>
+            <TextPresenter Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew" Margin="5">Enter money (with dot)</TextPresenter>
+            <TextBox Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Honeydew" Margin="5"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5">
+            <Button Width="80" HorizontalAlignment="Right" Background="Honeydew" Margin="5">OK</Button>
+            <Button Width="80" HorizontalAlignment="Left" Background="Honeydew" Margin="5">Exit</Button>
+        </StackPanel>
+    </Grid>
+
 </Window>
