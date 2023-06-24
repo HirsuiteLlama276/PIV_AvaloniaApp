@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Avalonia_App_PIV/App.axaml" value="Avalonia_App_PIV/Avalonia_App_PIV.csproj" />
+        <entry key="Avalonia_App_PIV/Views/AddBorrower.axaml" value="Avalonia_App_PIV/Avalonia_App_PIV.csproj" />
+        <entry key="Avalonia_App_PIV/Views/MainWindow.axaml" value="Avalonia_App_PIV/Avalonia_App_PIV.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
