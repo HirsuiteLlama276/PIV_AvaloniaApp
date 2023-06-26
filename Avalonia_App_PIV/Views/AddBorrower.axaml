@@ -18,9 +18,9 @@
     <Grid>
         <StackPanel>
             <TextBlock Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew" Margin="5">Enter name of the borrower</TextBlock>
-            <TextBox Text="{Binding Name, Mode=OneTime}" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Honeydew" Margin="5" />
+            <TextBox Name="TextBox" Text="{Binding UserName, Mode=TwoWay}" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Honeydew" Margin="5" />
             <TextBlock Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Honeydew" Margin="5">Enter money (with dot)</TextBlock>
-            <TextBox Text="{Binding Money, Mode=OneTime}" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Honeydew" Margin="5" />
+            <TextBox Text="{Binding Money}" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Honeydew" Margin="5" />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5">
