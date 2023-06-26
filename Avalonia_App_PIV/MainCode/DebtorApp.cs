@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Avalonia.Media;
 using ReactiveUI;
 using System.Windows;
@@ -19,14 +20,16 @@ public class DebtorApp
         {
             BorrowerManager.DeleteBorowers(debtorName);
         }
-        public void AllBorrowers()
+        public List<string> AllBorrowers()
         {
+            /*
             foreach(var borrower in BorrowerManager.ListBorrowers())
             {
                 Console.WriteLine(borrower);
             }
-            
-          
+            */
+            var borrower = BorrowerManager.ListBorrowers();
+            return borrower;
         }
     }
 }

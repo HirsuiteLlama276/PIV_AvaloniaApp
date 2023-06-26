@@ -2,23 +2,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:Avalonia_App_PIV.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Avalonia_App_PIV.Views.ShowListWindow"
         Title="ShowListWindow"
         Width="150"
         Height="400"
-        Background="Teal">
+        Background="Teal"
+        x:DataType="views:ShowListWindow">
         
-        <DataGrid>
+        <DataGrid Name="MyDataGrid" Items="{Binding _Borrowers}" AutoGenerateColumns="False" >
                 <DataGrid.Columns>
-                        <DataGridTextColumn Header="Nazwa" />
-                        <DataGridTextColumn Header="Kwota"  />
-                        <!-- ItemsSource="{Binding FileName}" Binding="{Binding Amount}"-->
+                        <DataGridTextColumn Header="Username" Binding="{Binding _Borrowers}"/>
+                        <DataGridTextColumn Header="Money" Binding="{Binding _Borrowers}" />
                 </DataGrid.Columns>
         </DataGrid>
-
-
-
-
-
 </Window>

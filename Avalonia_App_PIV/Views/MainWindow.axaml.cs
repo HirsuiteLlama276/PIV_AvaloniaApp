@@ -21,4 +21,10 @@ public partial class MainWindow : Window
         var Add = new ShowListWindow();
         Add.Show();
     }
+    
+    private void DeleteButton(object? sender, RoutedEventArgs e)
+    {
+        var Add = new DeleteButton();
+        Add.Show();
+    }
 }

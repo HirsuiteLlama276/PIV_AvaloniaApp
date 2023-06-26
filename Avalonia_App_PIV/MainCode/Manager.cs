@@ -26,15 +26,14 @@ public class Manager
                 return;
             }
 
-                var filesLines = File.ReadAllLines(FileName);
+            var filesLines = File.ReadAllLines(FileName);
             var borrowerstostring = new List<string>();
             foreach (var line in filesLines)
-                {
+            {
                     var lineItems = line.Split(';');
                         
                         if (decimal.TryParse(lineItems[1], out var moneyInDecimal))
-                        {
-                    var borrower = new Borrower
+                        { var borrower = new Borrower
                     {
                         Name = lineItems[0],
                         Money = moneyInDecimal
@@ -42,7 +41,7 @@ public class Manager
                     AddBorowers(lineItems[0], moneyInDecimal);
                     borrowerstostring.Add(borrower.ToString());
                         }
-                }
+            }
             BorrowersToString = borrowerstostring;
             
             
@@ -79,7 +78,7 @@ public class Manager
                 
             }
 
-                 var borrowersToFile = new List<string>();
+            var borrowersToFile = new List<string>();
 
                 foreach(var borrower in Borrowers)
                 {
