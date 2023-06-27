@@ -8,6 +8,7 @@
         <entry key="Avalonia_App_PIV/Views/DeleteButton.axaml" value="Avalonia_App_PIV/Avalonia_App_PIV.csproj" />
         <entry key="Avalonia_App_PIV/Views/MainWindow.axaml" value="Avalonia_App_PIV/Avalonia_App_PIV.csproj" />
         <entry key="Avalonia_App_PIV/Views/ShowListWindow.axaml" value="Avalonia_App_PIV/Avalonia_App_PIV.csproj" />
+        <entry key="Avalonia_App_PIV/Views/ShowListWindow2.axaml" value="Avalonia_App_PIV/Avalonia_App_PIV.csproj" />
       </map>
     </option>
   </component>

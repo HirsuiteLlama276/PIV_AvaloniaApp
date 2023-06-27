@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 
 namespace Avalonia_App_PIV;
@@ -91,14 +92,12 @@ public class Manager
         /// <summary>
         /// Funkcja wyświetlająca listę dłużników
         /// </summary>
-        public List<string> ListBorrowers()
+        public ObservableCollection<string>  ListBorrowers()
         {
-            var borrowersStrings = new List<string>();
-            var indexer = 1;
+            var borrowersStrings = new ObservableCollection<string> ();
             foreach (var borrower in Borrowers)
             {
-                var borrowerString = indexer + " "+ borrower.Name + " "+ borrower.Money + " zł";
-                indexer++;
+                var borrowerString =borrower.Name + " "+ borrower.Money + " zł";
                 borrowersStrings.Add(borrowerString);
             }
             return borrowersStrings;

@@ -8,13 +8,8 @@
         Title="ShowListWindow"
         Width="150"
         Height="400"
-        Background="Teal"
-        x:DataType="views:ShowListWindow">
-        
-        <DataGrid Name="MyDataGrid" Items="{Binding _Borrowers}" AutoGenerateColumns="False" >
-                <DataGrid.Columns>
-                        <DataGridTextColumn Header="Username" Binding="{Binding _Borrowers}"/>
-                        <DataGridTextColumn Header="Money" Binding="{Binding _Borrowers}" />
-                </DataGrid.Columns>
-        </DataGrid>
+        Background="Teal">
+        <DockPanel LastChildFill="True">
+                <ListBox VerticalAlignment="Stretch" DockPanel.Dock="Bottom" Items="{Binding Borrowers}" />
+        </DockPanel>
 </Window>

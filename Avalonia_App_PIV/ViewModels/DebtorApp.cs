@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Avalonia.Media;
 using ReactiveUI;
 using System.Windows;
@@ -10,7 +11,7 @@ public class DebtorApp
 {
     public class listDebtorApp
     {
-        public Manager BorrowerManager { get; set; } = new Manager();
+        public static Manager BorrowerManager { get; set; } = new Manager();
         public void AddBorrower(string debtorName, decimal debtorMoney)
         {
             BorrowerManager.AddBorowers(debtorName, debtorMoney);
@@ -20,7 +21,7 @@ public class DebtorApp
         {
             BorrowerManager.DeleteBorowers(debtorName);
         }
-        public List<string> AllBorrowers()
+        public static ObservableCollection<string>  AllBorrowers()
         {
             /*
             foreach(var borrower in BorrowerManager.ListBorrowers())

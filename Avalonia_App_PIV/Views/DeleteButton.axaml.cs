@@ -8,9 +8,6 @@ using Avalonia.Interactivity;
 public partial class DeleteButton : Window
 {
     public string UserName { get; set; }
-
-    public decimal Money { get; set; }
-
     public DeleteButton()
     {
         InitializeComponent();
@@ -30,5 +27,6 @@ public partial class DeleteButton : Window
             mainApp.DeleteBorrower(UserName);
         };
         saveAction.Invoke();
+        this.Close();
     }
 }

@@ -32,5 +32,11 @@ public partial class AddBorrowerWindow : Window
             mainApp.AddBorrower(UserName,Money);
         };
         saveAction.Invoke();
+        this.Close();
+    }
+
+    private void Exit(object? sender, RoutedEventArgs e)
+    {
+        this.Close();
     }
 }

@@ -18,8 +18,8 @@ public partial class MainWindow : Window
 
     private void ShowListButton(object? sender, RoutedEventArgs e)
     {
-        var Add = new ShowListWindow();
-        Add.Show();
+        var Add = new ShowListWindow2();
+        Content = Add;
     }
     
     private void DeleteButton(object? sender, RoutedEventArgs e)

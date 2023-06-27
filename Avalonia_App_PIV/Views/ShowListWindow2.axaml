@@ -1,0 +1,16 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Avalonia_App_PIV.Views.ShowListWindow2">
+    
+    <StackPanel>
+        <DockPanel LastChildFill="True">
+            <ListBox VerticalAlignment="Stretch" DockPanel.Dock="Bottom" Items="{Binding Borrowers}" />
+        </DockPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5">
+            <Button Click="Return" Width="80" HorizontalAlignment="Right" Background="Honeydew" Margin="5">OK</Button>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
